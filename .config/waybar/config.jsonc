@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "custom/roman_battery", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "", "2": "", "3": "", "4": "", "5": "",
+            "urgent": "", "active": "", "default": ""
+        }
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%A, %B %d, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/roman_battery": {
+	"exec": "~/.config/waybar/scripts/roman_bat.sh",
+	"return-type": "json",
+	"interval": 20,
+	"format": "{}",
+	"tooltip": true 
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": { "default": ["", "", ""] },
+        "on-click": "pavucontrol"
+    }
+}

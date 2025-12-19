@@ -1,0 +1,39 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0); /* Transparent background for the bar itself */
+    color: #cdd6f4;
+}
+
+/* Base style for all modules */
+.modules-left, .modules-center, .modules-right {
+    background: rgba(30, 30, 46, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2px 10px;
+    margin: 5px 0;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #bac2de;
+}
+
+#workspaces button.active {
+    color: #cba6f7;
+    font-weight: bold;
+}
+
+#clock, #pulseaudio, #network, #cpu, #memory {
+    padding: 0 10px;
+}
+
+custom-roman-battery {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    color: #f9e2af;
+    padding: 0 10px;
+}
