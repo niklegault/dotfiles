@@ -1,0 +1,20 @@
+Config(
+    x: Fraction(0.5),
+    y: Fraction(0.3),
+
+    width: Fraction(0.3),
+
+    max_entries: Some(5),
+
+    delay: 0,
+
+    plugins: [
+        "libapplications.so",
+        "libshell.so",
+        "librink.so",
+    ],
+
+    close_on_click: true,
+
+    show_results_immediately: false,
+)
