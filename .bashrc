@@ -24,4 +24,4 @@ format_path() {
 
 PROMPT_COMMAND='DIR_STR=$(format_path)'
 export PS1="[\u@\h \${DIR_STR}]\$ "
-#PS1='[\u@\h \W]\$ '
+cat ~/.cache/wal/sequences
