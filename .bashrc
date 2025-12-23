@@ -24,4 +24,5 @@ format_path() {
 
 PROMPT_COMMAND='DIR_STR=$(format_path)'
 export PS1="[\u@\h \${DIR_STR}]\$ "
+export XDG_DATA_DIRS="$HOME/.local/share:/usr/local/share:/usr/share"
 cat ~/.cache/wal/sequences
